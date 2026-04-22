@@ -22,9 +22,8 @@ def analyze_project():
 
     try:
         response = client.messages.create(
-            model="claude-opus-4-7", # The 2026 Flagship
+            model="claude-sonnet-4-6",
             max_tokens=4096,
-            # NEW 2026 STANDARDS:
             thinking={"type": "adaptive"}, 
             output_config={"effort": "high"}, # Options: 'low', 'medium', 'high', 'xhigh'
             tools=tools,
